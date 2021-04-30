@@ -1,26 +1,33 @@
-import React from 'react';
+/* eslint-disable array-callback-return */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from "react";
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
+import Details from "./components/details"
+import BookList from "./components/booklist";
+import {AddBook} from "./components/addbook";
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <div>
+        <h1>Book Management Store</h1>
+        <ul className="header">
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/books">Book List</NavLink></li>
+          <li><NavLink to="/addbook">Add Book</NavLink></li>
+        </ul>
+          <Route exact path="/" component={BookList}/>
+          <Route path="/books" component={BookList}/>
+          <Route path="/addbook" component={AddBook}/>
+          <Route path="/details/:id?" component={Details}/>
+      </div>
+    </HashRouter>
   );
 }
-
 export default App;

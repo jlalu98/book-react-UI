@@ -4,7 +4,11 @@ body {
   margin: 0;
   background-image: url(8ba86017709af3482ba15c5a28ed1764.jpg);
 }
-h1, h2, p, ul, li {
+h1,
+h2,
+p,
+ul,
+li {
   font-family: sans-serif;
 }
 ul.header li {
@@ -17,14 +21,14 @@ ul.header {
   padding: 0;
 }
 ul.header li a {
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
 }
 .content {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 20px;
 }
 .content h2 {
@@ -34,7 +38,13 @@ ul.header li a {
 .content li {
   margin-bottom: 10px;
 }
-#del-button,#add-button{
+#add-link {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+#del-button,
+#add-button {
   border: none;
   border-radius: 20px;
   outline: 0;
@@ -43,23 +53,23 @@ ul.header li a {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width:fit-content;
+  width: fit-content;
   font-size: 10px;
+  text-decoration: none;
 }
 .book-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   max-width: 300px;
-  height: 300px;
+  height: 400px;
   margin: auto;
   text-align: center;
   font-family: arial;
   border-radius: 20px;
   float: left;
-  padding: 5px;
-  color:#000;
+  color: #000;
   background-color: white;
 }
-.card{
+.card {
   background-color: white;
   display: inline-block;
   margin-left: 15px;
@@ -68,21 +78,21 @@ ul.header li a {
   border-radius: 15px;
   padding: 25px 25px 25px 25px;
 }
-.book-card:hover{
+.book-card:hover {
   opacity: 0.5;
 }
 .price {
-  color:#000;
+  color: #000;
   font-size: 22px;
 }
-#img{
-  width:30%;
+#img {
+  width: 50%;
 }
-#imgDetails{
-  width:20%;
+#imgDetails {
+  width: 20%;
   align-content: center;
 }
-.form-area{
+.form-area {
   background-color: white;
   display: inline-block;
   margin-left: 15px;
@@ -91,35 +101,8 @@ ul.header li a {
   border-radius: 15px;
   padding-left: 25px;
   padding-right: 25px;
-  
 }
-.book-form{
+.book-form {
   display: block;
   text-align: center;
-}
-
-.inner{
-  overflow: hidden;
-  width:30px;
-
-  position: absolute;
-top: 0;
-left: 0;
-white-space: nowrap;
-
-width: 0;
-
-}
-.inner::before{
-  content: "\f005 \f005 \f005 \f005 \f005 ";
-  color: yellow;
-  
-}
-.book-info{
-  display: inline-block;
-  padding: 15px;
-}
-.grid{
-  display: inline-block;
-  padding: 10px;
 }
